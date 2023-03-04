@@ -18,6 +18,8 @@ class App(ttk.Frame):
         ttk.Entry(self, textvariable=self.apellido).grid(row=2, column=2)
         ttk.Label(self, text="email", padding=3).grid(row=3, column=1)
         ttk.Entry(self,textvariable=self.email).grid(row=3, column=2)
+        #ttk.Entry(self,textvariable=self.email,show="*").grid(row=3, column=2)
+
         btn_guardar = ttk.Button(self, text="Guardar", padding=3, command=self.guardar)
         btn_guardar.grid(row=10, column=3)
         parent.bind('<Return>', lambda e: btn_guardar.invoke()) # para ejecutar el btn al presionar enter
